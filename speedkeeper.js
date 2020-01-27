@@ -7,6 +7,6 @@ if (cluster.isMaster) {
     }
 } else {
     setInterval(() => {
-        1 + 1;
-    }, 0.1);
+        4590 * 2191;
+    }, 0.001);
 }
