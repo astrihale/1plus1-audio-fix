@@ -8,7 +8,9 @@ Gigabyte AB350M-DS3H
 ASUS DUAL RX580 4GB
 Crucial BX500 480GB SSD
 
-And Catalina, 10.15.2, Vanilla.
+Works and is verified with
+- Catalina, 10.15.X, Vanilla
+- Big Sur, 11.0.1, Vanilla
 
 ### What does this solve? (Or atleast, what do I think this solves)
 Well, I think my issue with my build is the fact that the clock speed goes down when its idling. That's what causes the issues, because the OS isn't aware of the change in clock speed. So, what I did is I made a script that will keep the CPU busy enough (but of course, also not extremely utilized) so the clock speed doesn't go down.
