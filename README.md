@@ -13,7 +13,7 @@ And Catalina, 10.15.2, Vanilla.
 ### What does this solve? (Or atleast, what do I think this solves)
 Well, I think my issue with my build is the fact that the clock speed goes down when its idling. That's what causes the issues, because the OS isn't aware of the change in clock speed. So, what I did is I made a script that will keep the CPU busy enough (but of course, also not extremely utilized) so the clock speed doesn't go down.
 
-The script uses bare nodejs, and on every thread, it calculates 1+1 every 0.1ms.Using /Libary/LaunchAgents I created a plist that will start that when the OS launches, and that's pretty much everything.
+The script uses bare nodejs, and on every thread, it calculates 1+1 every 0.1ms.
 
 ### How to use
 
