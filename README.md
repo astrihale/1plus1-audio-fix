@@ -19,8 +19,28 @@ The script uses bare nodejs, and on every thread, it calculates 1+1 every 0.1ms.
 
 Note, this fix is useful, only if you suffer the same symptoms. If some kind of case where your audio doesn't depend on how much your CPU is utilized (I watched CPU utilization with `htop`), or it's the other way around, where your audio is good when the CPU is not utilized, and audio is bad when it is utilized, I don't really think this will help you. This is a really quick hack that in my case works.
 
-1. Place the `speedkeeper.js` file wherever you want to, I keep it in my home folder.
+#### Step 0.
+If you don't have [Homebrew](https://brew.sh), install it right now.
 
-2. Place the `speedkepper.plist` file in `/Library/LaunchAgents/`, and change the path to the script appropriately.
+#### Step 1.
+Install `NodeJS` using `Homebrew`.
+```
+brew install node
+```
 
-3. Restart the computer
+#### Step 2
+Clone the repository, download the code and place it somewhere
+```
+(if you want to clone it using git, use this)
+git clone https://github.com/astrihale/1plus1-audio-fix
+```
+
+#### Step 3
+Run the script, and leave the terminal window open
+```
+cd ./1plus1-audio-fix
+node speedkeeper.js
+```
+
+It should be working now, test the audio.
+This solution is not tidy at all, I'm very sorry to everyone who feels forced to leave the terminal window open. The `~/Library/LaunchAgents` solution does not work for this program as macOS stomps the process into the ground with priority and the solution is uneffective when run in such a way.
